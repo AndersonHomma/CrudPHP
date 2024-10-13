@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <title>Login</title>
+</head>
+
+<body class="body_login">
+    <section class="login_container">
+        <div class="login_container_img">
+            <img src="../css/LoginViol.jpg" alt="Violinos" class="img_viol">
+        </div>
+        <div class="login_container_content">
+            <div class="login_container_content_section">
+                <div class="login_container_section_principal">
+                    <h2 class="login_container_section_principal_titulo">CLUBE DO VIOLINO</h2>
+
+                    <form action="../php/login.php" method="post">
+                        <div class="textbox">
+                            <input name="login" type="text" placeholder="login" required="required">
+                        </div>
+                        <div class="textbox">
+                            <input name="email" type="email" placeholder="email" required="required">
+                        </div>
+                        <div class="textbox">
+                            <input name="senha" type="password" placeholder="Senha" required="required">
+                        </div>
+                        <button type="submit" class="btn">Entrar</button>
+                        <input name="id" type="hidden" value="#id">
+                    </form>
+                    <div>
+                        <p class="message">Digite seu login</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

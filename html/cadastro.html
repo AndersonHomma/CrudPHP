@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styleCadastro.css">
+  <title>Cadastro</title>
+</head>
+
+<body class="body_cadastro">
+
+  <div class="container">
+
+    <h1>CLUBE DO VIOLINO</h1>
+    <form action="../php/cadastro.php" method="post">
+
+      <div class="container_item">
+        <label for="" class="container_lbl" class="subtitulos">Login</label>
+        <div >
+          <input name="login" placeholder="login" type="text" class="container_form" required="required" value="#login">
+        </div>
+
+        <label for="" class="container_lbl" class="subtitulos">email</label>
+        <div >
+          <input name="email" placeholder="email" type="email" class="container_form" required="required" value="#email">
+        </div>
+
+        <div class="container_item">
+          <label for="text" class="container_lbl">Senha</label>
+          <div >
+            <input name="senha" placeholder="Sua senha" type="password" class="container_form" required="required"
+              value="#senha">
+          </div>
+        </div>
+
+        <div class="container_item">
+          <div class="container_submit">
+            <button name="submit" type="submit" class="container_btn">Enviar</button>
+          </div>
+        </div>
+        <input name="id" type="hidden" value="#id">
+        <p class="msg">FAÇA SEU CADASTRO</p>
+    </form>
+
+  </div>
+</body>
+
+</html>
